@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>A College Food Choices Case Study</h1>
+        <p>
+            Understanding student food habits, nutrition awareness,
+            and cafeteria satisfaction through data analysis.
+        </p>
+        <a href="/dashboard1" class="btn">View Dashboards</a>
+    </div>
+
+    <div class="hero-img">
+        <img src="{{ url_for('static', filename='images/food.jpg') }}">
+    </div>
+</section>
+
+<section class="cards">
+    <div class="card">
+        <h3>🍔 Preferences</h3>
+        <p>Analyze veg, non-veg, fast food & healthy choices.</p>
+    </div>
+
+    <div class="card">
+        <h3>💰 Spending</h3>
+        <p>Daily and monthly food expense behavior.</p>
+    </div>
+
+    <div class="card">
+        <h3>🥗 Nutrition</h3>
+        <p>Health awareness among college students.</p>
+    </div>
+
+    <div class="card">
+        <h3>🏫 Cafeteria</h3>
+        <p>Satisfaction level and improvement areas.</p>
+    </div>
+</section>
+
+{% endblock %}
